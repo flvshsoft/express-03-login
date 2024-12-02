@@ -1,0 +1,26 @@
+# Node.js dependencies
+/node_modules
+
+# Log files
+*.log
+
+# Temporary files
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Environment files
+.env
+
+# MacOS system files
+.DS_Store
+
+# Editor-specific files
+.vscode/
+.idea/
+
+# build output
+/dist
+
+# Optional: if you're using a test framework
+/coverage
