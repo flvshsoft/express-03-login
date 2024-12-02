@@ -20,3 +20,12 @@ CREATE TABLE users (
 INSERT INTO users (name, email) VALUES 
 ("John Doe", "john@example.com"),
 ("Jane Smith", "jane@example.com");
+
+
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/flvshsoft/express-01-init.git
+git push -u origin main
