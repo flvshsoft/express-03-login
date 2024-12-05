@@ -24,10 +24,10 @@ router.post("/register", async (req, res) => {
 
 // Login User
 router.post("/login", (req, res) => {
-  const { email, password } = req.body;
+  const { username, password } = req.body;
 
   const sql = "SELECT * FROM users WHERE email = ?";
-  db.query(sql, [email], async (err, results) => {
+  db.query(sql, [username], async (err, results) => {
     if (err || results.length === 0) {
       return res.status(401).json({ message: "Invalid email or password" });
     }
