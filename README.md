@@ -47,3 +47,4 @@ CREATE TABLE users (
 );
 
 
+npm install jsonwebtoken bcryptjs
