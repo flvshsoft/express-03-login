@@ -48,3 +48,24 @@ CREATE TABLE users (
 
 
 npm install jsonwebtoken bcryptjs
+
+
+<!-- register -->
+POST /auth/register
+
+{
+  "username": "JohnDoe",
+  "email": "john@example.com",
+  "password": "password123"
+}
+
+<!-- login -->
+POST /auth/login
+Body:
+
+json
+Salin kode
+{
+  "email": "john@example.com",
+  "password": "password123"
+}

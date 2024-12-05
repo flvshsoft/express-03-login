@@ -4,6 +4,7 @@ const cors = require("cors");
 const logger = require("./middleware/logger");
 const userRoutes = require("./routes/users");
 const produkRoutes = require("./routes/produk");
+const authRoutes = require("./routes/auth");
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use('/uploads', express.static('uploads')); // Folder untuk akses foto
 // Routes
 app.use("/users", userRoutes);
 app.use("/produk", produkRoutes);
+app.use("/auth", authRoutes);
 
 // Menjalankan server
 const PORT = 4000;
