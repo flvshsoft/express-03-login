@@ -66,6 +66,6 @@ Body:
 json
 Salin kode
 {
-  "email": "john@example.com",
+  "username": "john@example.com",
   "password": "password123"
 }
